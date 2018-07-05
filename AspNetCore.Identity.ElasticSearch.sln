@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Identity.ElasticSearch", "src\AspNetCore.Identity.ElasticSearch\AspNetCore.Identity.ElasticSearch.csproj", "{BE2C6A21-8E22-492D-BFE6-B0EEAF991872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Identity.ElasticSearch.Tests", "tests\AspNetCore.Identity.ElasticSearch.Tests\AspNetCore.Identity.ElasticSearch.Tests.csproj", "{F17FB92E-0359-4C90-9F9A-156310386680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{0996AABF-7346-45E1-AFCD-8618FE3582DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".root", ".root", "{B049D598-3F5E-4F8D-9BB3-32CBDC725FCC}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".scripts", ".scripts", "{5E5793C3-E7B0-41EC-A311-B22D48750661}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\local_db.ps1 = scripts\local_db.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE2C6A21-8E22-492D-BFE6-B0EEAF991872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2C6A21-8E22-492D-BFE6-B0EEAF991872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2C6A21-8E22-492D-BFE6-B0EEAF991872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2C6A21-8E22-492D-BFE6-B0EEAF991872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17FB92E-0359-4C90-9F9A-156310386680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17FB92E-0359-4C90-9F9A-156310386680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17FB92E-0359-4C90-9F9A-156310386680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17FB92E-0359-4C90-9F9A-156310386680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0996AABF-7346-45E1-AFCD-8618FE3582DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0996AABF-7346-45E1-AFCD-8618FE3582DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0996AABF-7346-45E1-AFCD-8618FE3582DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0996AABF-7346-45E1-AFCD-8618FE3582DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
