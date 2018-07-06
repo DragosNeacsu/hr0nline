@@ -17,6 +17,7 @@ using Microsoft.AspNetCore.Identity;
 using System.IO;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Sample
 {
@@ -96,7 +97,10 @@ namespace Sample
 			services.TryAddSingleton<UserManager<ElasticUser>, UserManager<ElasticUser>>();
 			services.TryAddScoped<SignInManager<ElasticUser>, SignInManager<ElasticUser>>();
 
-			services.AddMvc();
+			services.AddMvc(options =>
+			{
+				options.Filters.Add(new IgnoreAntiforgeryTokenAttribute());
+			});
 
 			// Add application services.
 			services.AddTransient<IEmailSender, AuthMessageSender>();
